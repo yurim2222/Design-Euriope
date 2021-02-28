@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>디자인유럽 | 메인</title>
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="scroll">
+                <div class="walking_img"></div>
+                <img src="images/pc/common/common_header_europeimg.svg" alt="유럽일러스트">
+            </div>
+            <div class="tnav">
+                <div class="wrap">
+
+                </div>
+            </div>
+                <div class="main_nav">
+                    <div class="wrap">
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/pc/ci/logo.svg" alt="로고이미지">
+                        </a>
+                    </h1>
+                    <nav class="gnb">
+                        
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="contents">
+            <main>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main01">
+                            <p class="paris01">
+                                <p class="maintext01 white">&nbsp;내 생에 최고의 도시&nbsp;</p>
+                                <p class="maintext02 white">당신이 가고 싶은 그 곳,</p>
+                                <p class="maintext03 bold white">낭만의 도시, 파리</p>
+                            </p>
+                        </div>
+                        <div class="swiper-slide main02">
+                            <p class="maintext01 white">&nbsp;야경이 아름다운 도시&nbsp;</p>
+                            <p class="maintext02 white">밤으로 떠나는 여행,</p>
+                            <p class="maintext03 bold white">아름다운, 프라하 </p>
+                        </div>
+                        <div class="swiper-slide main03">
+                            <p class="maintext01 white">&nbsp;가장 달콤한 나라&nbsp;</p>
+                            <p class="maintext02 white">일상에 지친 나를 위한,</p>
+                            <p class="maintext03 bold white">나의 인생여행지, 스위스</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchbox">
+                    <div class="citybox">
+                        <label for="city">위치</label><br>
+                        <input type="text" class="city" placeholder="어디로 떠나고 싶으세요?">
+                    </div>
+                    <div class="arrive">
+                        <label for="startdate">투어시작일</label><br>
+                        <input type="text" id="startdate" placeholder="날짜 선택">
+                    </div>
+                    <div class="departure">
+                        <label for="enddate">위치</label><br>
+                        <input type="text" id="enddate" placeholder="날짜 선택">
+                    </div>
+                    <button>찾아보기</button>
+                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+            </main>
+            <div class="clock">
+                <div class="wrap">
+                    <h2>유럽 시간</h2>
+                    <div class="world">
+                        <div id="kor">
+                            <h3>대한민국</h3>
+                            <div class="analog">
+                                <div class="hour">
+                                    <div class="hr" id="khr"></div>
+                                </div>
+                                <div class="min">
+                                    <div class="mn" id="kmn"></div>
+                                </div>
+                                <div class="sec">
+                                    <div class="sc" id="ksc"></div>
+                                </div>
+                            </div>
+                            <p id="kDate"></p>
+                            <p id="kTime"></p>
+                        </div>
+                        <div id="uk">
+                            <h3>영국</h3>
+                            <div class="analog">
+                                <div class="hour">
+                                    <div class="hr" id="uhr"></div>
+                                </div>
+                                <div class="min">
+                                    <div class="mn" id="umn"></div>
+                                </div>
+                                <div class="sec">
+                                    <div class="sc" id="usc"></div>
+                                </div>
+                            </div>
+                            <p id="uDate"></p>
+                            <p id="uTime"></p>
+                        </div>
+                        <div id="others">
+                            <h3>프랑스 / 독일 / 이탈리아</h3>
+                            <div class="analog">
+                                <div class="hour">
+                                    <div class="hr" id="ohr"></div>
+                                </div>
+                                <div class="min">
+                                    <div class="mn" id="omn"></div>
+                                </div>
+                                <div class="sec">
+                                    <div class="sc" id="osc"></div>
+                                </div>
+                            </div>
+                            <p id="oDate"></p>
+                            <p id="oTime"></p>
+                        </div>
+                        <script src="js/clock.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

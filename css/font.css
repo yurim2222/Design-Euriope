@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* montserrat */
+@font-face{
+    font-family: monserrat;
+    font-weight: 200;
+    src:local(※), url(../fonts/Montserrat-ExtraLight.woff);
+}
+@font-face{
+    font-family: monserrat;
+    font-weight: 400;
+    src:local(※), url(../fonts/Montserrat-Regular.woff);
+}
+@font-face{
+    font-family: monserrat;
+    font-weight: 600;
+    src:local(※), url(../fonts/Montserrat-SemiBold.woff);
+}
+@font-face{
+    font-family: S-CoreDream-7ExtraBold;
+    font-weight: 800;
+    src:local(※), url(../fonts/S-CoreDream-7ExtraBold.woff);
+}
+@font-face{
+    font-family: S-CoreDream-2ExtraLight;
+    font-weight: 200;
+    src:local(※), url(../fonts/S-CoreDream-2ExtraLight.woff);
+}
+@font-face{
+    font-family: S-CoreDream-3Light;
+    font-weight: 400;
+    src:local(※), url(../fonts/S-CoreDream-3Light.woff);
+}
+@font-face{
+    font-family: S-CoreDream-5Medium;
+    font-weight: 600;
+    src:local(※), url(../fonts/S-CoreDream-5Medium.woff);
+}

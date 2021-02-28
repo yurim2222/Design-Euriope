@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url("font.css");
+@import url("layout.css");
+$maincolor:#00309a;
+$subcolor: #ffcd00;
+
+// base
+*{ padding: 0; margin: 0; font-family: Montserrat, S-CoreDream-3Light, "맑은 고딕", sans-serif; color: #333;}
+.black{ color: #000; }
+.white{color: #fff;}
+.bold{ font-weight: 600; }
+.away{position: absolute; left: -999em;}
+a{text-decoration: none;}
+
+/* ===================================all divice===================================== */
+
+
+
+
+/* ===================================all divice===================================== */
+
+/* ===================================desktop===================================== */
+
+
+@media screen and (min-width: 1025px){
+    *{
+        font-size: 16px;
+    }
+    .wrap{
+        width: 1280px; max-width: 100%; margin: 0 auto;
+    }
+
+    header{
+        overflow: hidden;
+        .walking_img{
+            position: absolute;
+            left: -70px;
+            bottom: 0;
+            width: 70px;
+            height: 50px;
+            background: url(../images/pc/common/common_header_walking_girl.gif) no-repeat center 5px / contain;
+        }
+        .walking_img.flip{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70px;
+            height: 50px;
+            background: url(../images/pc/common/common_header_walking_girl02.gif) no-repeat center 5px / contain;
+        }
+        .scroll{
+            position: fixed; top: 0;
+            width: 100%; height: 87px; background-color: #fff; z-index: 1000;
+            img{
+                float: right;  margin-right: 5px; margin-top: 5px;
+            }
+        }
+        .tnav{
+            position: fixed; top:87px; z-index: 1001;
+            width: 100%; height: 30px; 
+            background-color: $maincolor;
+        }
+        .main_nav{
+            position: fixed; top: 117px; z-index: 1002;
+            width: 100%; height: 90px; background-color: #fff;
+        }
+    }
+}
+
+/* ===================================desktop===================================== */
+
+/* ===================================tablet===================================== */
+
+
+
+@media screen and (max-width: 1024px){
+    *{
+        font-size: 16px;
+    }
+    .wrap{
+        width: 100%; text-align: center;
+    }
+    header{
+        overflow: hidden;
+        
+        .scroll{
+            display: none;
+        }
+        .tnav{
+            display: none;
+        }
+        .main_nav{
+            position: fixed; top: 0; z-index: 1002;
+            width: 100%; height: 91px; background-color: #fff;
+        }
+    }
+}
+
+/* ===================================tablet===================================== */
+
+/* ===================================mobile===================================== */
+
+
+
+@media screen and (max-width: 767px){
+    *{
+        font-size: 14px;
+    }
+    header{
+        overflow: hidden;
+        .scroll{
+            display: none;
+        }
+        .tnav{
+            display: none;
+        }
+        .main_nav{
+            position: fixed; top: 0; z-index: 1002;
+            width: 100%; height: 50px; background-color: #fff;
+            img{
+                width: 75px;
+            }
+        }
+    }
+}
+
+/* ===================================mobile===================================== */
+
+/* ===================================iphone5===================================== */
+
+
+
+@media screen and (max-width: 767){
+    *{
+        font-size: 12px;
+    }
+}
+
+/* ===================================iphone5===================================== */

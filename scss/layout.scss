@@ -1,0 +1,56 @@
+@media screen and (min-width: 1024px){
+    .pcol31{ float: left; width: 33.33%;}
+    .pcol32{float: left; width: 66.66%;}
+    .pcol33{ float: left; width: 99.99%;}
+
+    .pcol71{ float: left; width: 14.285%;}
+    .pcol72{float: left; width: 28.57%;}
+    .pcol73{ float: left; width: 42.855%;}
+    .pcol74{ float: left; width: 57.14%;}
+    .pcol75{float: left; width: 71.425%;}
+    .pcol76{ float: left; width: 85.71%;}
+    .pcol77{ float: left; width: 99.995%;}
+    
+    .pcol41{ float: left; width: 25%;}
+    .pcol42{float: left; width: 50%;}
+    .pcol43{ float: left; width: 75%;}
+    .pcol44{ float: left; width: 100%;}
+}
+
+@media screen and (max-width: 1023px){
+    .tcol31{ float: left; width: 33.33%;}
+    .tcol32{float: left; width: 66.66%;}
+    .tcol33{ float: left; width: 99.99%;}
+
+    .tcol71{ float: left; width: 14.285%;}
+    .tcol72{float: left; width: 28.57%;}
+    .tcol73{ float: left; width: 42.855%;}
+    .tcol74{ float: left; width: 57.14%;}
+    .tcol75{float: left; width: 71.425%;}
+    .tcol76{ float: left; width: 85.71%;}
+    .tcol77{ float: left; width: 99.995%;}
+    
+    .tcol41{ float: left; width: 25%;}
+    .tcol42{float: left; width: 50%;}
+    .tcol43{ float: left; width: 75%;}
+    .tcol44{ float: left; width: 100%;}
+} 
+
+@media screen and (max-width: 767px){
+    .mcol31{ float: left; width: 33.33%;}
+    .mcol32{float: left; width: 66.66%;}
+    .mcol33{ float: left; width: 99.99%;}
+
+    .mcol71{ float: left; width: 14.285%;}
+    .mcol72{float: left; width: 28.57%;}
+    .mcol73{ float: left; width: 42.855%;}
+    .mcol74{ float: left; width: 57.14%;}
+    .mcol75{float: left; width: 71.425%;}
+    .mcol76{ float: left; width: 85.71%;}
+    .mcol77{ float: left; width: 99.995%;}
+    
+    .mcol41{ float: left; width: 25%;}
+    .mcol42{float: left; width: 50%;}
+    .mcol43{ float: left; width: 75%;}
+    .mcol44{ float: left; width: 100%;} 
+}
