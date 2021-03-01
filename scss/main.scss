@@ -6,7 +6,10 @@ $subcolor: #ffcd00;
 
 main{
     width: 100%; overflow: hidden;
-    
+}
+.boardSlide{
+    margin-top: 6rem;
+    width: 100%; height: 5.5rem; border-top: 1px solid #888; border-bottom: 1px solid #888; box-sizing: border-box;
 }
 
 /* ===================================all divice===================================== */
@@ -162,11 +165,11 @@ main{
             box-sizing: border-box;
           }
         h2{
-            font-size: 2rem; text-align: center; margin: 50px auto;
+            font-size: 2rem; text-align: center; margin: 50px auto 10px;
         }
         .world{
             display: flex;
-            width: 100%; height: 450px; 
+            width: 100%; height: 380px; 
             & > div{
                 flex: 1; 
                 margin: 10px;
@@ -179,16 +182,15 @@ main{
                 #kTime, #uTime, #oTime{
                     font-size: 1.4rem;
                 }
-                .analog{
-                    width: 14rem,;
-                    height: 14rem;
+                #kAnalog, #uAnalog, #oAnalog{
+                    width: 10rem,;
+                    height: 10rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     margin: 30px auto;
-                    background: url(../images/pc/main/main_clock.png);
                     background-size: cover;
-                    border: 6px solid $maincolor;
+                    border: 5px solid #444;
                     border-radius: 50%;
                     box-shadow: 0 -10px 15px rgba(255, 255, 255, 0.05),
                         inset 0 -10px 15px rgba(255, 255, 255, 0.05),
@@ -202,7 +204,7 @@ main{
                             background: rgb(59, 59, 59);
                             box-shadow:  1px 1px 3px rgba(36, 36, 36, 0.8);
                             border-radius: 50%;
-                            z-index: 10000;
+                            z-index: 100;
                         }
 
                         .hour,
@@ -213,18 +215,18 @@ main{
 
                         .hour,
                         .hr {
-                        width: 160px;
-                        height: 160px;
+                        width: 120px;
+                        height: 120px;
                         }
                         .min,
                         .mn {
-                        width: 190px;
-                        height: 190px;
+                        width: 130px;
+                        height: 130px;
                         }
                         .sec,
                         .sc {
-                        width: 230px;
-                        height: 230px;
+                        width: 180px;
+                        height: 180px;
                         }
                         .hr,
                         .mn,
@@ -239,7 +241,7 @@ main{
                         content: "";
                         position: absolute; top: 20px;
                         width: 5px;
-                        height: 55px;
+                        height: 35px;
                         background: $maincolor;
                         z-index: 10;
                         border-radius: 6px 6px 0 0;
@@ -250,7 +252,7 @@ main{
                         content: "";
                         position: absolute;
                         width: 4px;
-                        height: 90px;
+                        height: 65px;
                         background: #333;
                         z-index: 11;
                         border-radius: 6px 6px 0 0;
@@ -260,7 +262,7 @@ main{
                         content: "";
                         position: absolute; top: 25px;
                         width: 2px;
-                        height: 110px;
+                        height: 85px;
                         background: #777;
                         z-index: 12;
                         border-radius: 6px 6px 0 0;
@@ -271,6 +273,163 @@ main{
             }
         }
         
+    }
+    .event{
+        margin-top: 20px;
+    }
+    .steady, .event{
+        position: relative;
+        width: 100%; height: 100%; padding: 25px 0 0 25px; overflow: hidden; box-sizing: border-box;
+        .steadyListTitle, .eventListTitle{
+            
+            position: relative;
+            background-color: #fff; height: 520px; padding: 1rem; box-sizing: border-box;
+                h2{
+                    font-size: 2rem; font-weight: 600; margin-bottom: 2rem; 
+                }
+                p{
+                    font-size: 1.2rem; line-height: 2rem; display: inline-block;
+                    
+                }
+
+                .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+                    position: absolute;
+                    top: 400px;
+                    opacity: .35;
+                    cursor: auto;
+                    pointer-events: none;
+                    color: #444;
+                    border: 2px solid #444;
+                    border-radius: 100%;
+                    width: 50px;
+                    height: 50px;
+                }
+                .swiper-button-prev.swiper-button-disabled{
+                    left: 1rem;
+                }
+                .swiper-button-next.swiper-button-disabled{
+                    left: 50%;
+                }
+                .swiper-button-next.swiper-button-disabled,
+                .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
+                .swiper-button-prev.swiper-button-disabled {
+                    position: absolute;
+                    top: 400px;
+                    color: #444;
+                    border: 2px solid #444;
+                    border-radius: 100%;
+                    width: 50px;
+                    height: 50px;
+                    &::after{
+                    font-size: 30px;
+                    }
+                }
+                .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+                    top: 400px;
+                    color: #444;
+                    border: 2px solid #444;
+                    border-radius: 100%;
+                    width: 50px;
+                    height: 50px;
+                    &::after{
+                    font-size: 30px;
+                    }
+                }
+                .swiper-button-prev{
+                    left: 1rem;
+                }
+                .swiper-button-next{
+                    left: 50%;
+                }
+                .swiper-button-next:focus{
+                    outline: none;
+                }
+                .swiper-button-prev:focus{
+                    outline: none;
+                }
+            }
+            
+        
+
+        
+        
+        .pro{
+            height: 100%; 
+            background-color:#fff; border: 1px solid #555; border-top: 5px solid $maincolor; box-sizing: border-box; padding-bottom: 10px;
+            .txtBox{
+                width: 100%; padding: 1rem; box-sizing: border-box;
+                
+            .ex{
+                 height: 4rem;  overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+            }
+            img{
+                width: 100%;
+            }
+            h3{
+                font-size: 1.3rem;
+            }
+            ul{
+                float: right;
+                li{
+                    float: left;
+                    &.price{
+                        margin-right: 1rem; line-height: 2rem;
+                    }
+                    a{
+                        display: block; width: 4rem; height: 2rem; background-color: $maincolor; text-align: center; color: #fff; line-height: 2rem;
+                        &:hover{
+                            background-color: #fff; transition: 0.1s; color: $maincolor; border: 1px solid $maincolor; box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .recommand{
+        h2{
+            font-size: 2rem; text-align: center; margin-top: 50px; margin-bottom: 30px;
+        }
+        .re_west{
+            position: relative;
+            width: 50%; height:100%; overflow: hidden;
+            background-image: url(../images/pc/main/main_easteurope.png); background-repeat:  no-repeat;
+            background-size: 200% 100%; background-position: 0 50%;
+            &:hover{
+                background-position: 50% 50%; background-size: 100% 100%;
+                width: 100%; height:100%; transition: 1s;
+                
+                .west{
+                    width: 100%;
+                }
+            }
+            .west{
+                width: 200%; height: 600px; overflow: hidden;
+                h3{ 
+                    opacity: 0;
+                    position: absolute; top: 50%; right: 8rem; transform: translateY(-50%);
+                    font-size: 2.5rem; font-weight: 600;  
+                }
+                p{  
+                    opacity: 0;
+                    position: absolute; top: 50%; right: 4rem; transform: translateY(-50%);
+                    font-size: 1.5rem;  line-height: 3rem;  
+                }
+                &:hover{
+                    h3,p{
+                        opacity: 1; transition: 0.5s;
+                    }
+                }
+                ul{
+                    position: absolute; top: 50%; left: 5rem; transform: translateY(-50%);
+                    li{
+                        font-size: 1.5rem; line-height: 3rem;
+                    }
+                }
+            }
+        }
     }
     
     
@@ -429,26 +588,26 @@ main{
             box-sizing: border-box;
           }
         h2{
-            font-size: 2rem; text-align: center; margin: 35px auto;
+            font-size: 1.5rem; text-align: center; margin: 35px auto;
         }
         .world{
             display: flex;
-            width: 100%; height: 450px; 
+            width: 100%; height: 350px; 
             & > div{
                 flex: 1; 
                 margin: 10px;
                 text-align: center;
                 h3{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
             }
             #kor, #uk, #others{
                 #kTime, #uTime, #oTime{
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                 }
-                .analog{
-                    width: 10rem,;
-                    height: 10rem;
+                #kAnalog, #uAnalog, #oAnalog{
+                    width: 8rem,;
+                    height: 8rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -480,18 +639,18 @@ main{
 
                         .hour,
                         .hr {
-                        width: 80px;
-                        height: 80px;
+                        width: 60px;
+                        height: 60px;
                         }
                         .min,
                         .mn {
-                        width: 130px;
-                        height: 130px;
+                        width: 110px;
+                        height: 110px;
                         }
                         .sec,
                         .sc {
-                        width: 180px;
-                        height: 180px;
+                        width: 160px;
+                        height: 160px;
                         }
                         .hr,
                         .mn,
@@ -506,7 +665,7 @@ main{
                         content: "";
                         position: absolute;
                         width: 4px;
-                        height: 35px;
+                        height: 25px;
                         background: $maincolor;
                         z-index: 10;
                         border-radius: 6px 6px 0 0;
@@ -517,7 +676,7 @@ main{
                         content: "";
                         position: absolute;
                         width: 3px;
-                        height: 60px;
+                        height: 50px;
                         background: #333;
                         z-index: 11;
                         border-radius: 6px 6px 0 0;
@@ -527,7 +686,7 @@ main{
                         content: "";
                         position: absolute; top: 25px;
                         width: 1px;
-                        height: 80px;
+                        height: 70px;
                         background: #777;
                         z-index: 12;
                         border-radius: 6px 6px 0 0;
@@ -538,6 +697,116 @@ main{
             }
         }
         
+    }
+
+    .steady, .event{
+        position: relative;
+        width: 100%; height: 550px; padding: 25px 0 0 25px; overflow: hidden; box-sizing: border-box;
+        .steadyListTitle, .eventListTitle{
+            
+            position: relative;
+            background-color: #fff; height: 460px; padding: 1rem; box-sizing: border-box; padding-left: 2rem;
+                h2{
+                    font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1; height: 1.5rem;
+                }
+                p{
+                    font-size: 1rem; line-height: 1.7rem;
+                }
+            }
+        .steadyListTitle, .eventListTitle{
+            .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+                position: absolute;
+                top: 400px;
+                opacity: .35;
+                cursor: auto;
+                pointer-events: none;
+                color: #444;
+                border: 2px solid #444;
+                border-radius: 100%;
+                width: 50px;
+                height: 50px;
+            }
+            .swiper-button-prev.swiper-button-disabled{
+                left: 10%;
+            }
+            .swiper-button-next.swiper-button-disabled{
+                left: 50%;
+            }
+            .swiper-button-next.swiper-button-disabled,
+            .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
+            .swiper-button-prev.swiper-button-disabled {
+                position: absolute;
+                top: 400px;
+                color: #444;
+                border: 2px solid #444;
+                border-radius: 100%;
+                width: 50px;
+                height: 50px;
+                &::after{
+                font-size: 30px;
+                }
+            }
+            .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+                top: 400px;
+                color: #444;
+                border: 2px solid #444;
+                border-radius: 100%;
+                width: 50px;
+                height: 50px;
+                &::after{
+                font-size: 30px;
+                }
+            }
+            .swiper-button-prev{
+                left: 10%;
+            }
+            .swiper-button-next{
+                left: 50%;
+            }
+            .swiper-button-next:focus{
+                outline: none;
+            }
+            .swiper-button-prev:focus{
+                outline: none;
+            }
+
+        }
+        
+        .pro{
+            height: 100%; 
+            background-color:#fff; border: 1px solid #555; border-top: 5px solid $maincolor; box-sizing: border-box; padding-bottom: 10px;
+            .txtBox{
+                width: 100%; padding: 1rem; box-sizing: border-box;
+                
+                .ex{
+                    overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+            }
+            img{
+                width: 100%;
+            }
+            h3{
+                font-size: 1.2rem;
+            }
+            ul{
+                float: right;
+                li{
+                    float: left;
+                    &.price{
+                        margin-right: 1rem; line-height: 2rem;
+                    }
+                    a{
+                        display: block; width: 4rem; height: 2rem; background-color: $maincolor; text-align: center; color: #fff; line-height: 2rem;
+                        
+                        &:hover{
+                            background-color: #fff; transition: 0.1s; color: $maincolor; border: 1px solid $maincolor; box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
