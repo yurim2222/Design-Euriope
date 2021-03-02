@@ -5,6 +5,7 @@
 
     .pcol71{ float: left; width: 14.285%;}
     .pcol72{float: left; width: 28.57%;}
+    .pcol72r{float: right; width: 28.57%;}
     .pcol73{ float: left; width: 42.855%;}
     .pcol74{ float: left; width: 57.14%;}
     .pcol75{float: left; width: 71.425%;}
@@ -19,7 +20,9 @@
 
 @media screen and (max-width: 1023px){
     .tcol31{ float: left; width: 33.33%;}
+    .tcol31r{ float: right; width: 33.33%;}
     .tcol32{float: left; width: 66.66%;}
+    .tcol32r{float: right; width: 66.66%;}
     .tcol33{ float: left; width: 99.99%;}
 
     .tcol71{ float: left; width: 14.285%;}
