@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) { .pcol31 { float: left; width: 33.33%; }
+@media screen and (min-width: 1025px) { .pcol31 { float: left; width: 33.33%; }
   .pcol32 { float: left; width: 66.66%; }
   .pcol33 { float: left; width: 99.99%; }
   .pcol71 { float: left; width: 14.285%; }
@@ -14,7 +14,7 @@
   .pcol43 { float: left; width: 75%; }
   .pcol44 { float: left; width: 100%; } }
 
-@media screen and (max-width: 1023px) { .tcol31 { float: left; width: 33.33%; }
+@media screen and (max-width: 1024px) { .tcol31 { float: left; width: 33.33%; }
   .tcol31r { float: right; width: 33.33%; }
   .tcol32 { float: left; width: 66.66%; }
   .tcol32r { float: right; width: 66.66%; }

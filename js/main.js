@@ -1,3 +1,32 @@
+//팝업
+$(document).ready(function(){
+  function setCookie(name, value, expiredays){
+    var todayDate = new Date();
+    todayDate.setDate(todayDate.getDate() + expiredays);
+    document.cookie = name + '=' + escape( value ) + '; path=/; expires=' + todayDate.toGMTString() + ';'
+  }
+
+  var popup = '.popup';
+  var nomore = '.nomore'
+  var close = '.close'
+
+  $(nomore).click(function(){
+		setCookie('exCookie','done',1);
+		$(popup).stop().fadeOut(0);
+	});
+	
+	$(close).click(function(){
+		$(popup).stop().fadeOut(0);
+	});
+	
+	var cookieData = document.cookie;
+	if(cookieData.indexOf('exCookie=done') < 0){
+        $(popup).fadeIn(0);
+    }else{
+        $(popup).fadeOut(0);
+    }
+})
+
 
 //달력
 $( function() {
@@ -211,4 +240,18 @@ $(document).ready(function(){
   });
   
   
+});
+
+
+//카드
+$(document).ready(function(){
+  var cardImg = '.card_img';
+  var card = '.guide';
+
+  $(cardImg).mouseover(function(){
+    $(card).addClass('active');
+  });
+  $(cardImg).mouseout(function(){
+    $(card).removeClass('active');
+  });
 });

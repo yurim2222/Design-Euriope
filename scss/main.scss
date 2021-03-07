@@ -4,6 +4,33 @@ $subcolor: #ffcd00;
 
 /* ===================================all divice===================================== */
 
+.popup{
+    position: fixed; top: 9rem; left: 50%; transform: translateX(-50%);
+    width:25rem; height: 30rem; background-color: #fff; z-index: 100000; border: 1px solid #999;
+    .line{
+        h3{
+            color: $maincolor; font-size: 2rem; text-align: center; margin-top: 2rem;
+        }
+        width: 92%; height: 92%; margin: 4%; border: 5px solid $maincolor; box-sizing: border-box;
+        p{
+            margin-top: 1rem; text-align: center; line-height: 2rem;
+        }
+        background-image: url(../images/pc/common/common_header_europeimg.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        div{
+            margin-top: 2rem;
+            a{ display: block; float: left;  height: 2.5rem; line-height: 2.5rem; text-align: center; box-sizing: border-box; border-radius: 5px; margin-left: 1.5rem;}
+        }
+        .nomore{
+            width: 13rem; border: 2px solid $maincolor; color: $maincolor; background-color: #fff;
+        }
+        .close{
+            width: 5rem; background-color: $maincolor; color: #fff;
+        }
+    }
+}
+
 main{
     width: 100%; overflow: hidden;
 }
@@ -11,6 +38,81 @@ main{
     margin-top: 6rem;
     width: 100%; height: 5.5rem; border-top: 1px solid #888; border-bottom: 1px solid #888; box-sizing: border-box;
 }
+.newsletter_box{
+    margin-top: 8rem;
+    width: 100%; height: 70px; background-color: $maincolor;
+    h2{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+    }
+}
+.emergency{
+    margin-bottom: 6rem; overflow: hidden;
+}
+aside{
+    position: fixed; top: 20rem; right: 7px; z-index: 10000;
+    a, .card p{
+        font-size: 0.8rem; text-align: center;
+    }
+    ul{
+        border: 1px solid #888; border-bottom: none; width: 4rem;
+        a{
+            display: block; width: 4rem; height: 4rem; background-color: #fff; border-bottom: 1px solid #888; color: #555;
+            background-size: 3rem 3rem; background-repeat: no-repeat; background-position: 0.5rem 0; font-weight: 400;
+        }
+        li:first-child{
+            a{                
+                background-image: url(../images/pc/main/main_reservation_icon.png);
+                &:hover{
+                    background-color: $maincolor;
+                    color: #fff;
+                    transition: 0.2s;
+                    background-image: url(../images/pc/main/main_reservation_icon_active.png);
+                }
+            }
+        }
+        li:nth-child(2){
+            a{                
+                background-image: url(../images/pc/main/main_materials_icon.png);
+                &:hover{
+                    background-color: $maincolor;
+                    color: #fff;
+                    transition: 0.2s;
+                    background-image: url(../images/pc/main/main_materials_icon_active.png);
+                }
+            }
+        }
+        li:last-child{
+            a{                
+                background-image: url(../images/pc/main/main_service_icon.png);
+                &:hover{
+                    background-color: $maincolor;
+                    color: #fff;
+                    transition: 0.2s;
+                    background-image: url(../images/pc/main/main_service_icon_active.png);
+                }
+            }
+        }
+    }
+    .card{
+        position: fixed; right: 0;
+        width: 5rem; height: 5rem; text-align: center;
+        .card_img{
+            margin-top: 0.5rem;
+            width: 4rem; 
+        }
+        .guide{
+            position: fixed; top: 900px; right: 5rem;
+            &.active{
+                top: 200px; right: 5rem; transition: 0.3s;
+            }
+        }
+    }
+    
+}
+
 
 /* ===================================all divice===================================== */
 
@@ -18,9 +120,10 @@ main{
 
 
 @media screen and (min-width: 1025px){
+    
     main{           
         position: relative;   
-        margin-top: 194px;        
+        margin-top: 175px;        
         .big{ font-size: 2rem; font-weight: 600;}
         .searchbox{
             position: absolute; top: 450px; left: 50%; transform: translateX(-50%); z-index: 500;
@@ -393,14 +496,6 @@ main{
         h2{
             font-size: 2rem; text-align: center; margin-top: 50px; margin-bottom: 30px;
         }
-        // .re_east{
-        //     position: absolute; left: 0;top: 80px; height: 690px;
-        //     width:50%; background-color: khaki; overflow: hidden;
-        // }
-        // .re_west{
-        //     position: absolute; right: 0;top: 80px; height: 690px;
-        //     width:50%; background-color: gray; overflow: hidden;
-        // }
         .west{
             position: absolute; left: 50%;
             width:25%; background-color: red; overflow: hidden;
@@ -480,9 +575,121 @@ main{
     }
 
     .video{
-        margin-top: 10rem; margin-left: 3%;
+            margin-top: 10rem; margin-left: 3%; overflow: hidden;
         hr{
             width: 95%; margin-top: 2rem;
+        }
+        h3{
+           float: left; font-size: 1.5rem; margin-top: 1rem;    
+        }
+        .vIframe{
+            .vContent{
+                display: none;
+            }
+            .vContent.active{
+                display: block;
+            }
+            a{
+                float: right; margin-right: 10%; margin-top: 1.5rem;
+            }
+        }
+        .vList{
+            width: 40%; height: 580px; overflow-y: auto;
+            &::-webkit-scrollbar{
+                width: 10px; 
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #888;
+                border-radius: 10px;
+              }
+              &::-webkit-scrollbar-track {
+                background-color: #eee;
+                border-radius: 10px;
+                box-shadow: inset 0px 0px 5px white;
+              }
+            
+            .vBtn{
+                display: block;
+                img{
+                    float: left;
+                    width: 200px; height: 120px; margin-right: 1rem;
+                }
+                .text{
+                    width: 450px; height: 140px; line-height: 2rem;
+                    p{
+                        color: #333;;
+                    }
+                    .date{
+                        color: #888;
+                    }
+                }
+            }
+        }
+    }
+    .newsletter_box{
+        .newsletter{
+            padding-left: 3%;
+            padding-top: 5px;
+            box-sizing: border-box;
+            h2{
+                font-size: 1.2rem; line-height: 2rem;
+            }
+        }
+        .input{
+            padding-left: 3%;
+            box-sizing: border-box; 
+            input[type=text]{
+                width: 60%; margin-top: 1.3rem; height: 2.2rem; background-color: transparent; border: none; outline: none; color: #fff; border-bottom: 1px solid #fff;
+                &::placeholder{
+                    color: #fff;
+                }
+            }
+            button{
+                cursor: pointer;
+                width: 110px; height: 2.2rem; background-color: #fff;  border: none;
+                color: $maincolor; font-weight: 600;
+            }
+        }
+    }
+    
+    .map{
+        position: relative;
+        margin-top: 10rem;
+        width: 100%; height: 430px; background-color: $subcolor; 
+        
+        .address{
+            position: absolute; top: 3rem; right: 3rem;
+            width: 450px; height: 230px; padding:1rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.685);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); z-index: 5000;
+            h3{
+                font-size: 1.5rem; margin-bottom: 0.5rem;
+            }
+            hr{
+                color: #666;
+            }
+            h4{
+                margin-top: 0.8rem; font-weight: 800;
+            }
+        }
+    }
+
+    .emergency{
+        padding: 2rem;
+        h3{
+            font-size: 1.5rem; text-align: center; margin-top: 5rem; margin-bottom: 2rem;
+        }
+        li{
+            padding: 1rem; box-sizing: border-box;
+        }
+        img{
+            float: left; width: 100px; height: 67px;
+        }
+        .text{
+            display: table-cell; height: 77px;
+            float: left; margin-left: 2rem; vertical-align: middle;
+        }
+        .none{
+            display: none;
         }
     }
     
@@ -496,7 +703,7 @@ main{
 @media screen and (max-width: 1024px){
     main{           
         position: relative;   
-        margin-top: 92px;        
+        margin-top: 80px;        
         .big{ font-size: 2rem; font-weight: 600;}
         .searchbox{
             position: absolute; top: 450px; left: 50%; transform: translateX(-50%); z-index: 500;
@@ -681,7 +888,7 @@ main{
                             background: rgb(59, 59, 59);
                             box-shadow:  1px 1px 3px rgba(36, 36, 36, 0.8);
                             border-radius: 50%;
-                            z-index: 10000;
+                            z-index: 1000;
                         }
 
                         .hour,
@@ -885,6 +1092,7 @@ main{
         
     }
     .ranking{
+        overflow: hidden;
         margin-top: 5rem; 
         h2{
             font-size: 1.5rem; text-align: center; margin-bottom: 2rem;
@@ -901,6 +1109,121 @@ main{
                 width: 90%; 
             }
         }
+    }
+    .video{
+        margin-top: 10rem; margin-left: 3%; overflow: hidden;
+        hr{
+            width: 95%; margin-top: 2rem;
+        }
+        h3{
+           float: left; font-size: 1.5rem; margin-top: 1rem;    
+        }
+        .vIframe{
+            .vContent{
+                display: none;
+            }
+            .vContent.active{
+                display: block;
+            }
+            a{
+                float: right; margin-right: 10%; margin-top: 1.5rem;
+            }
+        }
+        .vList{
+             height: 580px; overflow-y: auto;
+            &::-webkit-scrollbar{
+                width: 10px; 
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #888;
+                border-radius: 10px;
+              }
+              &::-webkit-scrollbar-track {
+                background-color: #eee;
+                border-radius: 10px;
+                box-shadow: inset 0px 0px 5px white;
+              }
+            img{
+                float: left;
+                width: 100px; height: 60px; margin-right: 1rem;
+            }
+            .text{
+                width: 350px; height: 80px; line-height: 2rem;
+                p{
+                    color: #333;
+                }
+                .date{
+                    color: #888;
+                }
+            }
+        }
+    }
+    .newsletter_box{
+        padding: 0.8rem; box-sizing: border-box; 
+        p{
+            font-size: 0.8rem; line-height: 1.5rem;
+        }
+    }
+    .input{
+        padding-left: 3%;
+        box-sizing: border-box; 
+        input[type=text]{
+            width: 60%; font-size: 0.8rem; margin-top: 0.5rem; height: 2.2rem; background-color: transparent; border: none; outline: none; color: #fff; border-bottom: 1px solid #fff;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+        button{
+            cursor: pointer;
+            width: 110px; height: 2.2rem; background-color: #fff;  border: none;
+            color: $maincolor; font-weight: 600;
+        }
+    }
+
+    .map{position: relative;
+        margin-top: 10rem;
+        width: 100%; height: 430px; background-color: $subcolor; 
+        
+        .address{
+            position: absolute; top: 3rem; right: 3rem;
+            width: 450px; height: 230px; padding:1rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.685);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); z-index: 1000;
+            h3{
+                font-size: 1.5rem; margin-bottom: 0.5rem;
+            }
+            hr{
+                color: #666;
+            }
+            h4{
+                margin-top: 0.8rem; font-weight: 800;
+            }
+        }
+    }
+
+    .emergency{
+            padding: 2rem;
+        li{
+            padding: 1rem; box-sizing: border-box;
+        }
+        img{
+            width: 100px; height: 65px;
+            float: left;
+        }
+        .text{
+            float: left; margin-left: 1rem;
+        }
+    }
+    aside{
+        .btn{
+            &.active{
+                display: none;
+            }
+        }
+        top: 200px;
+        .card{
+            display: none;
+        }
+        
     }
 }
 
@@ -1159,9 +1482,69 @@ main{
             display: none;
             }
         }
+    }
+    .video{
+        .vIframe{
+            iframe{
+                height: 300px;
+            }
+        }
+        .vList{
+            width: 100%; height: 120px; 
+            white-space: nowrap; overflow: auto;
+            img{
+                margin-top: 2rem; display: block;
+                width: 120px; height: 70px;
+            }
+            display: flex;
+            .text{
+                width: 100%;
+                display: none;
+            }
+        }
+    }
+    .newsletter_box{
+        margin-top: 5rem;
+        h2{
+            font-size: 1.3rem; padding: 0.8rem;
+        }
+        p{
+            display: none;
+        }
+    }
+    .input{
+        input[type=text]{
+            width: 70%; margin-top: 0.7rem;
+        }
+        button{
+            float: right; margin-top: 0.5rem;
+            border-radius: 100%; width: 2.7rem; height: 2.7rem; 
+        }
+    }
+    .map{position: relative;
+        margin-top: 5rem;
+        width: 100%; height: 300px; background-color: $subcolor; 
         
+        .address{
+            display: none;
+        }
+    }
+    .emergency{
+        img{
+            width: 70px; height: 40px;
+        }
+        .text{
+            margin-left: 0.5rem;
+        }
+        p{
+             font-size: 0.9rem;
+        }
+    }
+    aside{
+        display: none;
     }
 }
+
 
 /* ===================================mobile===================================== */
 
@@ -1180,7 +1563,30 @@ main{
 
     .steady, .event {
         height: 480px;
-        padding: 5px;
+        padding: 0;
+    }
+    .newsletter_box{
+        margin-top: 3rem; padding: 0;
+        height: 3.5rem; padding-top: 0;
+        h2{
+            padding: 1rem;
+            font-size: 1rem;
+        }
+        p{  padding: 1rem;
+            display: none;
+        }
+    }
+    .input{
+        input[type=text]{
+            width: 140px; height: 1.5rem; padding-top: 0; font-size: 0.8rem;
+        }
+        button{
+            float: right; margin-top: 0.5rem;  margin-right: 1rem;
+            border-radius: 100%; width: 2.3rem; height: 2.3rem; font-size: 0.8rem;
+        }
+    }
+    footer{
+        width: 100%; height: 460px;
     }
 }
 
