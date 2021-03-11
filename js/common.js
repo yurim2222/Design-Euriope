@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 //gnb
 $(document).ready(function(){
-    var tourBtn = '.nev_btn';
+    var tourBtn = '.guidetour';
     var tourMenu = '.tour_theme';
     var btn = '.closeBtn';
     var pannel = '.pannel'
@@ -66,7 +66,6 @@ $(document).ready(function(){
         $(pannel).click(function(){
             $('.pannelbg').addClass('active');
             $(aside).addClass('active');
-            var has = $(this).hasClass('active');
         })
         $(btn).click(function(){
             $('.pannelbg').removeClass('active');

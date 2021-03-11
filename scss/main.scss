@@ -31,236 +31,140 @@ $subcolor: #ffcd00;
     }
 }
 
-main{
-    width: 100%; overflow: hidden;
-}
-.boardSlide{
-    margin-top: 6rem;
-    width: 100%; height: 5.5rem; border-top: 1px solid #888; border-bottom: 1px solid #888; box-sizing: border-box;
-}
-.newsletter_box{
-    margin-top: 8rem;
-    width: 100%; height: 70px; background-color: $maincolor;
-    h2{
-        color: #fff;
-    }
-    p{
-        color: #fff;
-    }
-}
-.emergency{
-    margin-bottom: 6rem; overflow: hidden;
-}
-aside{
-    position: fixed; top: 20rem; right: 7px; z-index: 10000;
-    a, .card p{
-        font-size: 0.8rem; text-align: center;
-    }
-    ul{
-        border: 1px solid #888; border-bottom: none; width: 4rem;
-        a{
-            display: block; width: 4rem; height: 4rem; background-color: #fff; border-bottom: 1px solid #888; color: #555;
-            background-size: 3rem 3rem; background-repeat: no-repeat; background-position: 0.5rem 0; font-weight: 400;
-        }
-        li:first-child{
-            a{                
-                background-image: url(../images/pc/main/main_reservation_icon.png);
-                &:hover{
-                    background-color: $maincolor;
-                    color: #fff;
-                    transition: 0.2s;
-                    background-image: url(../images/pc/main/main_reservation_icon_active.png);
-                }
-            }
-        }
-        li:nth-child(2){
-            a{                
-                background-image: url(../images/pc/main/main_materials_icon.png);
-                &:hover{
-                    background-color: $maincolor;
-                    color: #fff;
-                    transition: 0.2s;
-                    background-image: url(../images/pc/main/main_materials_icon_active.png);
-                }
-            }
-        }
-        li:last-child{
-            a{                
-                background-image: url(../images/pc/main/main_service_icon.png);
-                &:hover{
-                    background-color: $maincolor;
-                    color: #fff;
-                    transition: 0.2s;
-                    background-image: url(../images/pc/main/main_service_icon_active.png);
-                }
-            }
-        }
-    }
-    .card{
-        position: fixed; right: 0;
-        width: 5rem; height: 5rem; text-align: center;
-        .card_img{
-            margin-top: 0.5rem;
-            width: 4rem; 
-        }
-        .guide{
-            position: fixed; top: 900px; right: 5rem;
-            &.active{
-                top: 200px; right: 5rem; transition: 0.3s;
-            }
-        }
-    }
-    
-}
-
-
-/* ===================================all divice===================================== */
-
-/* ===================================desktop===================================== */
-
-
-@media screen and (min-width: 1025px){
-    
-    main{           
-        position: relative;   
-        margin-top: 175px;        
-        .big{ font-size: 2rem; font-weight: 600;}
-        .searchbox{
-            position: absolute; top: 450px; left: 50%; transform: translateX(-50%); z-index: 500;
-            width: 900px; height: 60px; border-radius: 10px; background-color: rgba(255, 255, 255, 0.658); text-align: center; padding: 5px 0px 0px 20px; font-weight: 600;
-            label{ float: left; margin-top: 2px;}
-            input[type=text]{
-                width: 100%; height: 32px; background-color: transparent; border: none; outline: none; 
-                
-            }
-            button{
-                width: 15%; height: 80%; margin-top: 4px; border: none; background-color: $maincolor; color: #fff; cursor: pointer; border-radius: 5px;
-            }
-            .citybox{
-                float: left; width: 40%; height: 60px;
-                .city{
-                    float: left; width: 100%;
-                }
-            }
-            .arrive, .departure{
-                 width: 20%; float: left;
-            }
-        }
-        .main01,.main02,.main03{
-            position: relative;  top:0;
-            height: 600px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            
-            .maintext01{
-                position: absolute; top: 170px ; left: 60%; background-color: #3A3A51; font-size: 1rem;
-            }
-            .maintext02{
-                position: absolute; top: 210px ; left: 60%; font-size: 2rem;
-            }
-            .maintext03{
-                position: absolute; top: 260px ; left: 60%; font-size: 2rem;
-            }
+main{           
+    position: relative;   
+    margin-top: 175px;        
+    .big{ font-size: 2rem; font-weight: 600;}
+    .searchbox{
+        position: absolute; top: 450px; left: 50%; transform: translateX(-50%); z-index: 500;
+        width: 900px; height: 60px; border-radius: 10px; background-color: rgba(255, 255, 255, 0.658); text-align: center; padding: 5px 0px 0px 20px; font-weight: 600;
+        label{ float: left; margin-top: 2px;}
+        input[type=text]{
+            width: 100%; height: 32px; background-color: transparent; border: none; outline: none; 
             
         }
-        .main01{
-            background-image: url(../images/pc/main/main_slide01.png);
-            
+        button{
+            width: 15%; height: 80%; margin-top: 4px; border: none; background-color: $maincolor; color: #fff; cursor: pointer; border-radius: 5px;
         }
-        .main02{
-            background-image: url(../images/pc/main/main_slide02.png);
-            
+        .citybox{
+            float: left; width: 40%; height: 60px;
+            .city{
+                float: left; width: 100%;
+            }
         }
-        .main03{
-            background-image: url(../images/pc/main/main_slide03.png);
-           
-        }
-        .ui-widget-content {
-            border: 1px solid rgb(221, 221, 221);
-            background: rgba(255, 255, 255, 0.815);
-            color: rgb(51, 51, 51);
-            
-        }
-        .swiper-button-next:focus{
-            outline: none;
-        }
-        .swiper-button-prev:focus{
-            outline: none;
-        }
-        .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-            top: 100px;
-            left: 70%;
-            width: 50px;
-            height: 50px;
-            border-radius: 100%; border: 2px solid #fff;
-        }
-        .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-            top: 100px;
-            left: 60%;
-            right: auto;
-            width: 50px;
-            height: 50px;
-            border-radius: 100%; border: 2px solid #fff;
-        }
-        .swiper-button-next:after, .swiper-button-prev:after {
-            font-family: swiper-icons;
-            font-size: var(--swiper-navigation-size);
-            text-transform: none!important;
-            letter-spacing: 0;
-            text-transform: none;
-            font-variant: initial;
-            line-height: 1;
+        .arrive, .departure{
+             width: 20%; float: left;
         }
     }
-    main .swiper-button-next:after, main .swiper-button-prev:after {
-        color: #fff;
+    .main01,.main02,.main03{
+        position: relative;  top:0;
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        .maintext01{
+            position: absolute; top: 170px ; left: 60%; background-color: #3A3A51; font-size: 1rem;
+        }
+        .maintext02{
+            position: absolute; top: 210px ; left: 60%; font-size: 2rem;
+        }
+        .maintext03{
+            position: absolute; top: 260px ; left: 60%; font-size: 2rem;
+        }
+        
+    }
+    .main01{
+        background-image: url(../images/pc/main/main_slide01.png);
+        
+    }
+    .main02{
+        background-image: url(../images/pc/main/main_slide02.png);
+        
+    }
+    .main03{
+        background-image: url(../images/pc/main/main_slide03.png);
+       
+    }
+    .ui-widget-content {
+        border: 1px solid rgb(221, 221, 221);
+        background: rgba(255, 255, 255, 0.815);
+        color: rgb(51, 51, 51);
+        
+    }
+    .swiper-button-next:focus{
+        outline: none;
+    }
+    .swiper-button-prev:focus{
+        outline: none;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        top: 100px;
+        left: 70%;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%; border: 2px solid #fff;
+    }
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+        top: 100px;
+        left: 60%;
+        right: auto;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%; border: 2px solid #fff;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
         font-family: swiper-icons;
-        font-size: 30px;
-        text-transform: none !important;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none!important;
         letter-spacing: 0;
         text-transform: none;
         font-variant: initial;
         line-height: 1;
-    }
-    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-        border: none;
-        background: transparent;
-        font-weight: normal;
-        color: #454545;
-    }
-    .ui-datepicker th {
-        width: 30px;;
-        padding: .7em .3em;
-        text-align: center;
-        font-weight: bold;
-        border: 0;
-        
+        font-size: 30px;
         
     }
-    th.ui-datepicker-week-end:first-child span {
-        color: red;
-    }
-    th.ui-datepicker-week-end:last-child span {
-        color: blue;
-    }
-    a.ui-state-default:hover {
-        font-weight: 600;
-    }
-
-    .ui-datepicker .ui-datepicker-next {
-        background-image: url(../images/pc/main/btn_next.svg); background-size: 100%;
-        width: 15px; height: 15px;
-        top:9px;
-    }
-    .ui-datepicker .ui-datepicker-prev {
-        background-image: url(../images/pc/main/btn_prev.svg); background-size: 100%;
-        width: 15px; height: 15px;
-        top:9px;
-    }
+}
 
 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: transparent;
+    font-weight: normal;
+    color: #454545;
+}
+.ui-datepicker th {
+    width: 30px;;
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
     
+    
+}
+th.ui-datepicker-week-end:first-child span {
+    color: red;
+}
+th.ui-datepicker-week-end:last-child span {
+    color: blue;
+}
+a.ui-state-default:hover {
+    font-weight: 600;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    background-image: url(../images/pc/main/btn_next.svg); background-size: 100%;
+    width: 15px; height: 15px;
+    top:9px;
+}
+.ui-datepicker .ui-datepicker-prev {
+    background-image: url(../images/pc/main/btn_prev.svg); background-size: 100%;
+    width: 15px; height: 15px;
+    top:9px;
+}
+
+
+
     .clock{
         :root {
             margin: 0;
@@ -268,7 +172,7 @@ aside{
             box-sizing: border-box;
           }
         h2{
-            font-size: 2rem; text-align: center; margin: 50px auto 10px;
+            font-size: 2rem; text-align: center; margin: 6rem auto 3rem;
         }
         .world{
             display: flex;
@@ -377,11 +281,118 @@ aside{
         }
         
     }
+
+
+
+.boardSlide{
+    margin-top: 6rem;
+    width: 100%; height: 5.5rem; border-top: 1px solid #888; border-bottom: 1px solid #888; box-sizing: border-box;
+}
+.newsletter_box{
+    margin-top: 8rem;
+    width: 100%; height: 70px; background-color: $maincolor;
+    h2{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+    }
+}
+.emergency{
+    margin-bottom: 6rem; overflow: hidden;
+}
+aside{
+    position: fixed; top: 20rem; right: 7px; z-index: 10000;
+    a, .card p{
+        font-size: 0.8rem; text-align: center;
+    }
+    ul{
+        border: 1px solid #888; border-bottom: none; width: 65px;
+        a{
+            display: block; width: 65px; height: 63px; background-color: #fff; border-bottom: 1px solid #888; color: #555;
+            background-size: 48px 48px; background-repeat: no-repeat; background-position: 7px 0; font-weight: 400; padding-top: 45px;
+            box-sizing: border-box
+        }
+        li:first-child{
+            a{                
+                background-image: url(../images/pc/main/main_reservation_icon.png);
+                &:hover{
+                    background-color: $maincolor;
+                    color: #fff;
+                    transition: 0.2s;
+                    background-image: url(../images/pc/main/main_reservation_icon_active.png);
+                }
+            }
+        }
+        li:nth-child(2){
+            a{                
+                background-image: url(../images/pc/main/main_materials_icon.png);
+                &:hover{
+                    background-color: $maincolor;
+                    color: #fff;
+                    transition: 0.2s;
+                    background-image: url(../images/pc/main/main_materials_icon_active.png);
+                }
+            }
+        }
+        li:last-child{
+            a{                
+                background-image: url(../images/pc/main/main_service_icon.png);
+                &:hover{
+                    background-color: $maincolor;
+                    color: #fff;
+                    transition: 0.2s;
+                    background-image: url(../images/pc/main/main_service_icon_active.png);
+                }
+            }
+        }
+    }
+    .card{
+        position: fixed; right: 0;
+        width: 80px; height: 70px; text-align: center;
+        .card_img{
+            margin-top: 0.5rem;
+            width: 60px; 
+        }
+        .guide{
+            opacity: 0;
+            position: fixed; top: 900px; right: 5rem;
+            &.active{
+                opacity: 1;
+                top: 200px; right: 5rem; transition: 0.3s;
+            }
+        }
+    }
+    
+}
+
+
+/* ===================================all divice===================================== */
+
+/* ===================================desktop===================================== */
+
+
+@media screen and (min-width: 1025px){
+    
+    
+    .swiper-button-next:after, main .swiper-button-prev:after {
+        color: #fff;
+        font-family: swiper-icons;
+        font-size: 30px;
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1;
+    }
+
+
+    
     .event{
         margin-top: 20px;
     }
     .steady, .event{
-        position: relative;
+        position: relative; margin-top: 8rem; margin-bottom: 10rem;
         width: 100%; height: 100%; padding: 25px 0 0 25px; overflow: hidden; box-sizing: border-box;
         .steadyListTitle, .eventListTitle{
             
@@ -411,7 +422,7 @@ aside{
                     left: 1rem;
                 }
                 .swiper-button-next.swiper-button-disabled{
-                    left: 50%;
+                    left: 50%; 
                 }
                 .swiper-button-next.swiper-button-disabled,
                 .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
@@ -435,7 +446,7 @@ aside{
                     width: 50px;
                     height: 50px;
                     &::after{
-                    font-size: 30px;
+                    font-size: 30px; color: #333;
                     }
                 }
                 .swiper-button-prev{
@@ -542,37 +553,13 @@ aside{
         .btn_wrap {
             margin-top: 0.8rem;
             a{
-                color: $maincolor; font-size: 2rem; line-height: 1rem; 
+                color: $maincolor; font-size: 1rem; line-height: 1rem; 
                 }
             }
         }
         
     }
     
-    .ranking{
-        margin-top: 5rem; overflow: hidden;
-        h2{
-            font-size: 2rem; text-align: center; margin-bottom: 2rem;
-        }
-        .city{
-            position: relative;
-            height: 100%; overflow: hidden; 
-            &:hover{
-                .paper{
-                    left:-100%; transition: 0.8s;
-                }
-            }
-            .paper{
-                position: absolute; top:15%; left: 10%;
-                width: 75%; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
-                
-            }
-            .city_r{
-                margin-top: 4%; margin-left: 10%;
-                width: 75%; 
-            }
-        }
-    }
 
     .video{
             margin-top: 10rem; margin-left: 3%; overflow: hidden;
@@ -701,165 +688,27 @@ aside{
 
 
 @media screen and (max-width: 1024px){
-    main{           
-        position: relative;   
+    main{ 
         margin-top: 80px;        
-        .big{ font-size: 2rem; font-weight: 600;}
         .searchbox{
-            position: absolute; top: 450px; left: 50%; transform: translateX(-50%); z-index: 500;
-            width: 750px; height: 50px; border-radius: 10px; background-color: rgba(255, 255, 255, 0.658); text-align: center; padding: 5px 0px 0px 20px; font-weight: 600;
-            label{ float: left; margin-top: 0;}
+            width: 750px; height: 50px; 
+            label{ margin-top: 0;}
             input[type=text]{
-                width: 100%; height: 23px; background-color: transparent; border: none; outline: none; 
-                
-            }
-            button{
-                width: 15%; height: 80%; margin-top: 4px; border: none; background-color: $maincolor; color: #fff; border-radius: 5px;
-            }
-            .citybox{
-                float: left; width: 40%; height: 60px;
-                .city{
-                    float: left; width: 100%;
-                }
-            }
-            .arrive, .departure{
-                 width: 20%; float: left;
+                height: 23px;
             }
         }
-        .main01,.main02,.main03{
-            position: relative;  top:0;
-            height: 600px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            
-            .maintext01{
-                position: absolute; top: 170px ; left: 60%; background-color: #3A3A51; font-size: 1rem;
-            }
-            .maintext02{
-                position: absolute; top: 210px ; left: 60%; font-size: 2rem;
-            }
-            .maintext03{
-                position: absolute; top: 260px ; left: 60%; font-size: 2rem;
-            }
-            
-        }
-        .main01{
-            background-image: url(../images/pc/main/main_slide01.png);
-            
-        }
-        .main02{
-            background-image: url(../images/pc/main/main_slide02.png);
-            
-        }
-        .main03{
-            background-image: url(../images/pc/main/main_slide03.png);
-           
-        }
-        .ui-widget-content {
-            border: 1px solid rgb(221, 221, 221);
-            background: rgba(255, 255, 255, 0.815);
-            color: rgb(51, 51, 51);
-            
-        }
-        .swiper-button-next:focus{
-            outline: none;
-        }
-        .swiper-button-prev:focus{
-            outline: none;
-        }
-        .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-            top: 100px;
-            left: 70%;
-            width: 50px;
-            height: 50px;
-            border-radius: 100%; border: 2px solid #fff;
-        }
-        .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-            top: 100px;
-            left: 60%;
-            right: auto;
-            width: 50px;
-            height: 50px;
-            border-radius: 100%; border: 2px solid #fff;
-        }
-        .swiper-button-next:after, .swiper-button-prev:after {
-            font-family: swiper-icons;
-            font-size: var(--swiper-navigation-size);
-            text-transform: none!important;
-            letter-spacing: 0;
-            text-transform: none;
-            font-variant: initial;
-            line-height: 1;
-        }
-    }
-    main .swiper-button-next:after, main .swiper-button-prev:after {
-        color: #fff;
-        font-family: swiper-icons;
-        font-size: 30px;
-        text-transform: none !important;
-        letter-spacing: 0;
-        text-transform: none;
-        font-variant: initial;
-        line-height: 1;
     }
 
     
-    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-        border: none;
-        background: transparent;
-        font-weight: normal;
-        color: #454545;
-    }
-    .ui-datepicker th {
-        width: 30px;;
-        padding: .7em .3em;
-        text-align: center;
-        font-weight: bold;
-        border: 0;
-        
-        
-    }
-    th.ui-datepicker-week-end:first-child span {
-        color: red;
-    }
-    th.ui-datepicker-week-end:last-child span {
-        color: blue;
-    }
-    a.ui-state-default:hover {
-        font-weight: 600;
-    }
-
-    .ui-datepicker .ui-datepicker-next {
-        background-image: url(../images/pc/main/btn_next.svg); background-size: 100%;
-        width: 15px; height: 15px;
-        top:9px;
-    }
-    .ui-datepicker .ui-datepicker-prev {
-        background-image: url(../images/pc/main/btn_prev.svg); background-size: 100%;
-        width: 15px; height: 15px;
-        top:9px;
-    } 
 
     .clock{
-        :root {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          }
         h2{
             font-size: 1.5rem; text-align: center; margin: 35px auto;
         }
         .world{
-            display: flex;
-            width: 100%; height: 350px; 
+            height: 350px; 
             & > div{
-                flex: 1; 
-                margin: 10px;
-                text-align: center;
-                h3{
-                    font-size: 1.2rem;
-                }
+                h3{ font-size: 1.2rem; }
             }
             #kor, #uk, #others{
                 #kTime, #uTime, #oTime{
@@ -868,17 +717,6 @@ aside{
                 #kAnalog, #uAnalog, #oAnalog{
                     width: 8rem,;
                     height: 8rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 30px auto;
-                    background: url(../images/pc/main/main_clock.png);
-                    background-size: cover;
-                    border: 4px solid #333;
-                    border-radius: 50%;
-                    box-shadow: 0 -10px 15px rgba(255, 255, 255, 0.05),
-                        inset 0 -10px 15px rgba(255, 255, 255, 0.05),
-                        0 -10px 10px rgba(0, 0, 0, 0.3), inset 0 -10px 10px rgba(0, 0, 0, 0.3);
 
                         &::before{
                             content: " ";
@@ -887,30 +725,22 @@ aside{
                             height: 12px;
                             background: rgb(59, 59, 59);
                             box-shadow:  1px 1px 3px rgba(36, 36, 36, 0.8);
-                            border-radius: 50%;
-                            z-index: 1000;
-                        }
-
-                        .hour,
-                        .min,
-                        .sec{
-                            position:absolute;
                         }
 
                         .hour,
                         .hr {
-                        width: 60px;
-                        height: 60px;
+                        width: 110;
+                        height: 110px;
                         }
                         .min,
                         .mn {
-                        width: 110px;
-                        height: 110px;
+                        width: 100px;
+                        height: 100px;
                         }
                         .sec,
                         .sc {
-                        width: 160px;
-                        height: 160px;
+                        width: 150px;
+                        height: 150px;
                         }
                         .hr,
                         .mn,
@@ -925,10 +755,10 @@ aside{
                         content: "";
                         position: absolute;
                         width: 4px;
-                        height: 25px;
+                        height: 35px;
                         background: $maincolor;
                         z-index: 10;
-                        border-radius: 6px 6px 0 0;
+                        border-radius: 6px 6px 6px 6px;
                         box-shadow:  1px 1px 4px rgba(36, 36, 36, 0.8);
                         }
 
@@ -961,14 +791,14 @@ aside{
 
     .steady, .event{
         position: relative;
-        width: 100%; height: 550px; padding: 25px 0 0 25px; overflow: hidden; box-sizing: border-box;
+        width: 100%;  height: 550px; padding: 25px 0 0 25px; margin-top: 3rem; margin-bottom: 3rem; overflow: hidden; box-sizing: border-box;
         .steadyListTitle, .eventListTitle{
             
             position: relative;
             background-color: #fff; height: 460px; padding: 1rem; box-sizing: border-box; padding-left: 2rem;
                 h2{
                     font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 1; height: 1.5rem;
+                    -webkit-line-clamp: 1; height: 1.7rem;
                 }
                 p{
                     font-size: 1rem; line-height: 1.7rem;
@@ -1034,6 +864,7 @@ aside{
         }
         
         .pro{
+            
             height: 100%; 
             background-color:#fff; border: 1px solid #555; border-top: 5px solid $maincolor; box-sizing: border-box; padding-bottom: 10px;
             .txtBox{
@@ -1090,25 +921,6 @@ aside{
             }
         }
         
-    }
-    .ranking{
-        overflow: hidden;
-        margin-top: 5rem; 
-        h2{
-            font-size: 1.5rem; text-align: center; margin-bottom: 2rem;
-        }
-        .city{
-           
-            
-            .paper{
-                display: none;
-                
-            }
-            .city_r{
-                margin-top: 4%; margin-left: 5%;
-                width: 90%; 
-            }
-        }
     }
     .video{
         margin-top: 10rem; margin-left: 3%; overflow: hidden;
@@ -1311,6 +1123,7 @@ aside{
         text-transform: none;
         font-variant: initial;
         line-height: 1;
+        
     }
 
     .clock{
@@ -1394,6 +1207,7 @@ aside{
                 height: 30px;
                 &::after{
                 font-size: 15px;
+                
                 }
             }
             .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
@@ -1456,9 +1270,6 @@ aside{
                 }
             }
         }
-    }
-    .recommand{
-        display: none;
     }
     
     .boardSlide{
@@ -1530,15 +1341,23 @@ aside{
         }
     }
     .emergency{
-        img{
-            width: 70px; height: 40px;
+        h3{
+            margin: 2rem auto; text-align: center;
         }
-        .text{
-            margin-left: 0.5rem;
+        padding: 1rem;
+        li{
+            padding: 0.5rem;
+            img{
+                width: 50px; height: 30px;
+            }
+            .text{
+                margin-left: 0.3rem;
+            }
+            p{
+                 font-size: 0.8rem; 
+            }
         }
-        p{
-             font-size: 0.9rem;
-        }
+        
     }
     aside{
         display: none;
@@ -1553,6 +1372,33 @@ aside{
 
 
 @media screen and (max-width: 321px){
+    .popup{
+        position: fixed; top: 4rem; left: 50%; transform: translateX(-50%);
+        width:23rem; height: 30rem; background-color: #fff; z-index: 100000; border: 1px solid #999;
+        .line{
+            h3{
+                color: $maincolor; font-size: 2rem; text-align: center; margin-top: 2rem;
+            }
+            width: 92%; height: 92%; margin: 4%; border: 5px solid $maincolor; box-sizing: border-box;
+            p{
+                margin-top: 1rem; text-align: center; line-height: 2rem;
+            }
+            background-image: url(../images/pc/common/common_header_europeimg.svg);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            div{
+                margin-top: 2rem;
+                a{ display: block; float: left;  height: 2.5rem; line-height: 2.5rem; text-align: center; box-sizing: border-box; border-radius: 5px; margin-left: 1.5rem;}
+            }
+            .nomore{
+                width: 13rem; border: 2px solid $maincolor; color: $maincolor; background-color: #fff;
+            }
+            .close{
+                width: 5rem; background-color: $maincolor; color: #fff;
+            }
+        }
+    }
+
     .clock .world > div {
         -webkit-box-flex: 1;
         -ms-flex: 1;

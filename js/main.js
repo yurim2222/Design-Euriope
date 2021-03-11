@@ -242,6 +242,19 @@ $(document).ready(function(){
   
 });
 
+//랭킹
+$(document).ready(function(){
+  var ranking = '.ranking'
+
+  $(window).on('scroll',function(){
+    var sTop = $(window).scrollTop();
+    var rTop = $(ranking).offset().top;
+    if(sTop > rTop - 400 ){
+      $(ranking).addClass('active');
+    }
+  });
+});
+
 
 //카드
 $(document).ready(function(){
