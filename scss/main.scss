@@ -697,6 +697,9 @@ aside{
                 height: 23px;
             }
         }
+        .swiper-button-next:after, .swiper-button-prev:after{
+            color: #fff;
+        }
     }
 
     
@@ -1374,7 +1377,7 @@ aside{
 @media screen and (max-width: 321px){
     .popup{
         position: fixed; top: 4rem; left: 50%; transform: translateX(-50%);
-        width:23rem; height: 30rem; background-color: #fff; z-index: 100000; border: 1px solid #999;
+        width:21rem; height: 29rem; background-color: #fff; z-index: 100000; border: 1px solid #999;
         .line{
             h3{
                 color: $maincolor; font-size: 2rem; text-align: center; margin-top: 2rem;
@@ -1387,14 +1390,14 @@ aside{
             background-repeat: no-repeat;
             background-position: right bottom;
             div{
-                margin-top: 2rem;
-                a{ display: block; float: left;  height: 2.5rem; line-height: 2.5rem; text-align: center; box-sizing: border-box; border-radius: 5px; margin-left: 1.5rem;}
+                margin-top: 1rem;
+                a{ display: block; float: left;  height: 2.5rem; line-height: 2.5rem; text-align: center; box-sizing: border-box; border-radius: 5px; margin-left: 1.2rem;}
             }
             .nomore{
-                width: 13rem; border: 2px solid $maincolor; color: $maincolor; background-color: #fff;
+                width: 11rem; border: 2px solid $maincolor; color: $maincolor; background-color: #fff;
             }
             .close{
-                width: 5rem; background-color: $maincolor; color: #fff;
+                width: 4rem; background-color: $maincolor; color: #fff;
             }
         }
     }
@@ -1433,6 +1436,12 @@ aside{
     }
     footer{
         width: 100%; height: 460px;
+        .right_bottom{
+            width: 21rem;
+            a{
+                width: 9.5rem;
+            }
+        }
     }
 }
 
